@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+                      "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <title>Storytime</title>
+  <style type="text/css">
+    body { background: lightgrey; }
+    #wrap{ background:#ffffff; width:50em;  padding:3em;}
+#menu {
+	list-style:none;
+	margin:0px;
+	position:relative;
+	top:-49px;
+	font-size:1.2em;
+	}
+#menu li {
+	float:right;
+	padding:10px 10px 3px 10px;
+	background:forestgreen;
+	}
+#menu li a{
+	text-decoration:none; 
+	color:black;
+	}
+	
+#menu li:first-child {
+border-bottom-right-radius:10px;
+}
+#menu li:last-child {
+border-bottom-left-radius:10px;
+}
+
+#menu li:hover, #menu li:hover a{
+	background:limegreen;
+	cursor:pointer;
+	color:DarkSlateGray;
+	}
+  </style>
+</head>
+
+<body>
+<div id="wrap">
+  <ul id="menu">
+	  <li><a href="<?php echo 'conv-controller.php';?>?mode=about" id="l2">About</a></li>
+	  <li><a href="<?php echo 'conv-controller.php';?>?mode=help" id="l4">Help</a></li>
+	  <li><a href="<?php echo $myurl;?>?mode=convert" id="l4">Conversion</a></li>
+</ul>
+
