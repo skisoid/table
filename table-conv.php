@@ -66,7 +66,7 @@
         while ((!feof($filehandler)) && ($line = fgets($filehandler))){
 
             $line = trim($line);
-            //TODO kontrolli et ei oleks koma kymendkohal
+            
             $cell = explode(';', $line);
             $numerofcolumns = count($cell);
             $emptycells = 0;
