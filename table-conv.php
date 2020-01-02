@@ -126,6 +126,7 @@
             $line = trim($line);
             echo "$line<br>";
         } 
+        fclose($filehandler);
     }
     function print_sum_file($FileName){
         $sumfilename = make_sum_file_name($FileName);
